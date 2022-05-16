@@ -66,6 +66,10 @@ module OpenTelemetry
           def tracer
             RubyKafka::Instrumentation.instance.tracer
           end
+
+          def config
+            RubyKafka::Instrumentation.instance.config
+          end
         end
       end
     end
